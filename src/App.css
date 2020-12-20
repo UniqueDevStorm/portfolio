@@ -46,7 +46,8 @@
 }
 
 .Projects {
-  margin-top: 60vh;
+  margin-top: 35vh;
+  margin-bottom: 35vh;
 }
 
 .Doit {
@@ -56,6 +57,18 @@
 .Lang {
   font-size: 50px;
   margin-top: 10vh;
+}
+
+.Hover {
+  display: inline-block;
+}
+
+.Hover span {
+  visibility: hidden;
+}
+
+.Hover:hover span {
+  visibility: visible;
 }
 
 .Footer {

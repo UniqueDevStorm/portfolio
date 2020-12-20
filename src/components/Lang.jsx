@@ -8,6 +8,7 @@ export default class Lang extends React.Component {
         return (
             <div className='Hover'>
                 <Icon />
+                <br />
                 <span>{this.props.name}</span>
             </div>
         )

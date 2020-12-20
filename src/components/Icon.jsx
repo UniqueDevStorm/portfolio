@@ -5,7 +5,7 @@ export default class Contact extends React.Component {
     render() {
         const Icon = Icons[this.props.logo]
         return (
-            <a href={this.props.url} className='Icons' rel='noreferrer'>
+            <a href={this.props.url} className='Icons' rel='noreferrer' id={this.props.id}>
                 <Icon />
             </a>
         )
