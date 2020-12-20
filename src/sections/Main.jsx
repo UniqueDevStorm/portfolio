@@ -7,7 +7,7 @@ const MainSection = () => {
         <div className='Desc' id="home">
             <img src={Logo} className='Logo' alt='Logo'></img>
             <h1 className='MyNameIs'>
-                UniqueCode 소속 STORM
+                DevStorm
         </h1>
             <h2 className='Description'>
                 To be Perfect Developer
