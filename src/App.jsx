@@ -3,6 +3,7 @@ import Logo from './logo.png';
 import Header from './components/Header';
 import Contact from './components/Contact';
 import Lang from './components/Lang';
+import Project from './components/Project';
 import React, { useState } from 'react';
 import { createMuiTheme, MuiThemeProvider, CssBaseline, Grid, Card, CardHeader, CardContent, CardActions, Button } from '@material-ui/core';
 import Footer from './components/Footer';
@@ -67,50 +68,10 @@ function App() {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <Card style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-              <CardHeader title="Uniquebots" />
-              <CardContent style={{ flexGrow: 1, fontSize: '20px' }}>
-                유니크한 봇들을 홍보하는 서비스.
-              </CardContent>
-              <CardActions>
-                <Button href="https://uniquebots.kr" target='_blank'>바로가기</Button>
-              </CardActions>
-            </Card>
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <Card style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-              <CardHeader title="FreeAI" />
-              <CardContent style={{ flexGrow: 1, fontSize: '20px' }}>
-                게임, 음악 등 다기능 봇.
-              </CardContent>
-              <CardActions>
-                <Button href="https://freeai.me" target='_blank'>바로가기</Button>
-              </CardActions>
-            </Card>
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <Card style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-              <CardHeader title="각종 Api" />
-              <CardContent style={{ flexGrow: 1, fontSize: '20px' }}>
-                오버워치, 급식 등 Api 모듈 제작.
-              </CardContent>
-              <CardActions>
-                <Button href="https://github.com/UniqueDevStorm?tab=repositories" target='_blank'>바로가기</Button>
-              </CardActions>
-            </Card>
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <Card style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-              <CardHeader title="Portfolio" />
-              <CardContent style={{ flexGrow: 1, fontSize: '20px' }}>
-                DevStorm 포트폴리오
-              </CardContent>
-              <CardActions>
-                <Button href="https://github.com/UniqueDevStorm/portfolio" target='_blank'>바로가기</Button>
-              </CardActions>
-            </Card>
-          </Grid>
+          <Project title='Uniquebots' desc='유니크한 봇들을 홍보하는 서비스.' url='https://uniquebots.kr' />
+          <Project title='FreeAI' desc='게임, 음악 등 다기능 봇.' url='https://freeai.me' />
+          <Project title='각종 Api' desc='오버워치, 급식 등 Api 모듈 제작.' url='https://github.com/UniqueDevStorm?tab=repositories' />
+          <Project title='Portfolio' desc='DevStorm 포트폴리오' url='https://github.com/UniqueDevStorm/portfolio' />
         </Grid>
       </div>
       <div className='Contact'>
